@@ -54,7 +54,7 @@ function App() {
           Gender Reveal Baby Shower for
         </div>
 
-        <div className='font-bold text-5xl text-yellow-400 pb-4'>
+        <div className='font-bold text-5xl text-gold pb-4'>
           Alex & Gloria
         </div>
 
@@ -68,7 +68,7 @@ function App() {
           Registry is at <a>Amazon</a>
         </div>
 
-        <div className='font-bold text-3xl text-yellow-400'>
+        <div className='font-bold text-3xl text-gold'>
           Location:
         </div>
 
@@ -84,7 +84,7 @@ function App() {
           1480 Beaver Ruin Rd. Norcross, GA, 30093
         </div>
         
-        <div className='font-bold text-3xl text-yellow-400'>
+        <div className='font-bold text-3xl text-gold'>
           Diaper Raffle!
         </div>
 
