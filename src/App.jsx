@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className='w-full min-h-screen bg-gradient-to-tl from-pink-300 via-white to-blue-500' onClick={() => setFlipped(!flipped)}>
-      <a.div className='absolute cursor-pointer will-change-transform w-full flex flex-col items-center gap-5 pt-4' style={{ opacity: opacity.to(o => 1 - o), transform }}>
+      <a.div className='absolute cursor-pointer will-change-transform w-full flex flex-col items-center gap-5 pt-6' style={{ opacity: opacity.to(o => 1 - o), transform }}>
         <div className='font-bold text-3xl'>
           A Bun Is In The Oven...
         </div>
@@ -54,12 +54,22 @@ function App() {
           Gender Reveal Baby Shower for
         </div>
 
-        <div className='font-bold text-3xl text-yellow-400'>
+        <div className='font-bold text-5xl text-yellow-400 pb-4'>
           Alex & Gloria
         </div>
 
-        <div className='text-xl'>
+        <div className='text-xl pt-12'>
+          Tap for more information
+        </div>
+      </a.div>
+
+      <a.div className='absolute cursor-pointer will-change-transform w-full flex flex-col items-center gap-5 pt-6' style={{opacity, transform, rotateX: '180deg'}}>
+        <div className='text-2xl'>
           Registry is at <a>Amazon</a>
+        </div>
+
+        <div className='font-bold text-3xl text-yellow-400'>
+          Location:
         </div>
 
         <div className='text-xl'>
@@ -73,9 +83,7 @@ function App() {
         <div className='text-xl'>
           1480 Beaver Ruin Rd. Norcross, GA, 30093
         </div>
-      </a.div>
-
-      <a.div className='absolute cursor-pointer will-change-transform w-full flex flex-col items-center gap-5 pt-4' style={{opacity, transform, rotateX: '180deg'}}>
+        
         <div className='font-bold text-3xl text-yellow-400'>
           Diaper Raffle!
         </div>
