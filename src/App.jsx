@@ -17,12 +17,12 @@ function App() {
 
   return (
     <div className='w-full min-h-screen bg-gradient-to-tl from-pink-300 via-white to-blue-500' onClick={() => setFlipped(!flipped)}>
-      <a.div className='absolute cursor-pointer will-change-transform w-full flex flex-col items-center gap-4' style={{ opacity: opacity.to(o => 1 - o), transform }}>
+      <a.div className='absolute cursor-pointer will-change-transform w-full flex flex-col items-center gap-5 pt-4' style={{ opacity: opacity.to(o => 1 - o), transform }}>
         <div className='font-bold text-3xl'>
           A Bun Is In The Oven...
         </div>
 
-        <div className='font-bold text-3xl'>
+        <div className='font-bold text-3xl pb-2'>
           Is It A
         </div>
 
@@ -46,7 +46,7 @@ function App() {
           <img src={bluecupcake} className='w-[120px]' />
         </div>
         
-        <div className='text-xl'>
+        <div className='text-xl pt-2'>
           Come find out & see @ the
         </div>
 
@@ -75,7 +75,7 @@ function App() {
         </div>
       </a.div>
 
-      <a.div className='absolute cursor-pointer will-change-transform w-full flex flex-col items-center gap-4' style={{opacity, transform, rotateX: '180deg'}}>
+      <a.div className='absolute cursor-pointer will-change-transform w-full flex flex-col items-center gap-5 pt-4' style={{opacity, transform, rotateX: '180deg'}}>
         <div className='font-bold text-3xl text-yellow-400'>
           Diaper Raffle!
         </div>
