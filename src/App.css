@@ -4,3 +4,7 @@
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently not supported by any browser */
 }
+
+body {
+  font-family: 'Dancing Script', cursive;
+}
