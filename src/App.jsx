@@ -17,16 +17,20 @@ function App() {
 
   return (
     <div className='w-full min-h-screen bg-gradient-to-tl from-pink-300 via-white to-blue-500' onClick={() => setFlipped(!flipped)}>
-      <a.div className='absolute cursor-pointer will-change-transform w-full h-screen flex flex-col justify-center items-center gap-4' style={{ opacity: opacity.to(o => 1 - o), transform }}>
+      <a.div className='absolute cursor-pointer will-change-transform w-full flex flex-col items-center gap-4' style={{ opacity: opacity.to(o => 1 - o), transform }}>
         <div className='font-bold text-3xl'>
-          A Bun Is In The Oven... Is It A
+          A Bun Is In The Oven...
+        </div>
+
+        <div className='font-bold text-3xl'>
+          Is It A
         </div>
 
         <div className='flex flex-row justify-center items-center'>
-          <img src={pinkcupcake} />
+          <img src={pinkcupcake} className='w-[120px]' />
 
           <div className='flex flex-col justify-center items-center text-3xl font-bold gap-4'>
-            <div>
+            <div className='text-center'>
               Stud Muffin
             </div>
 
@@ -39,7 +43,7 @@ function App() {
             </div>
           </div>
 
-          <img src={bluecupcake} />
+          <img src={bluecupcake} className='w-[120px]' />
         </div>
         
         <div className='text-xl'>
@@ -71,9 +75,25 @@ function App() {
         </div>
       </a.div>
 
-      <a.div className='absolute cursor-pointer will-change-transform w-full' style={{opacity, transform, rotateX: '180deg'}}>
-        <div>
-          Bobina
+      <a.div className='absolute cursor-pointer will-change-transform w-full flex flex-col items-center gap-4' style={{opacity, transform, rotateX: '180deg'}}>
+        <div className='font-bold text-3xl text-yellow-400'>
+          Diaper Raffle!
+        </div>
+
+        <div className='text-2xl'>
+          For each pack of diapers you bring, you'll
+        </div>
+
+        <div className='text-2xl'>
+          receive one entry in our prize drawing.
+        </div>
+        
+        <div className='text-2xl'>
+          First prize is getting the baby named after you!!!
+        </div>
+
+        <div className='text-2xl'>
+          Just kidding - it's a basket with goodies! 
         </div>
       </a.div>
     </div>
