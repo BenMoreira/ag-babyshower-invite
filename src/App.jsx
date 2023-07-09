@@ -143,7 +143,7 @@ function App() {
         }
         
         {spanish ?
-          <div className='text-xl'>El ganador/ganadora del primer premio le pone</div> :
+          <div className='text-xl'>El ganador del primer premio le pone</div> :
           <div className='text-xl'>First prize is getting the baby named after you!!!</div>
         }
 
