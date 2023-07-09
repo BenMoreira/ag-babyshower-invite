@@ -15,12 +15,31 @@ function App() {
     config: { mass: 5, tension: 500, friction: 80 },
   });
 
+  const [popup, setPopup] = useState(true);
+  const [spanish, setSpanish] = useState(false);
+
   return (
+    <>
+    { popup ? 
+    <div className='w-full min-h-screen bg-black'>
+      <div className='w-full h-screen flex flex-col justify-center items-center font-bold gap-8'>
+        <button onClick={() => setPopup(false)} 
+        className='bg-gradient-to-tl from-pink-300 via-white to-blue-500 rounded-lg px-6 py-2'>
+          English
+        </button>
+
+        <button onClick={() => {setPopup(false); setSpanish(true)}} 
+        className='bg-gradient-to-tl from-pink-300 via-white to-blue-500 rounded-lg px-5 py-2'>
+          Espanyol
+        </button>
+      </div>
+    </div> :
     <div className='w-full min-h-screen bg-gradient-to-tl from-pink-300 via-white to-blue-500' onClick={() => setFlipped(!flipped)}>
       <a.div className='absolute cursor-pointer will-change-transform w-full flex flex-col items-center gap-5 pt-6' style={{ opacity: opacity.to(o => 1 - o), transform }}>
-        <div className='font-bold text-3xl'>
-          A Bun Is In The Oven...
-        </div>
+        {spanish ? 
+          <div className='font-bold text-3xl'>Bing Bong</div> :
+          <div className='font-bold text-3xl'>A Bun Is In The Oven...</div>
+        }
 
         <div className='font-bold text-3xl pb-2'>
           Is It A
@@ -105,6 +124,8 @@ function App() {
         </div>
       </a.div>
     </div>
+    }
+    </>
   )
 }
 
