@@ -37,91 +37,108 @@ function App() {
     <div className='w-full min-h-screen bg-gradient-to-tl from-pink-300 via-white to-blue-500' onClick={() => setFlipped(!flipped)}>
       <a.div className='absolute cursor-pointer will-change-transform w-full flex flex-col items-center gap-5 pt-6' style={{ opacity: opacity.to(o => 1 - o), transform }}>
         {spanish ? 
-          <div className='font-bold text-3xl'>Bing Bong</div> :
+          <div className='font-bold text-3xl'>Hay un bebé en Camino...</div> :
           <div className='font-bold text-3xl'>A Bun Is In The Oven...</div>
         }
 
-        <div className='font-bold text-3xl pb-2'>
-          Is It A
-        </div>
+        {spanish ?
+          <div className='font-bold text-3xl pb-2'>Que crees que es?</div> :
+          <div className='font-bold text-3xl pb-2'>Is It A</div>
+        }
 
         <div className='flex flex-row justify-center items-center'>
           <img src={pinkcupcake} className='w-[120px]' />
 
           <div className='flex flex-col justify-center items-center text-3xl font-bold gap-4'>
-            <div className='text-center'>
-              Stud Muffin
-            </div>
+            {spanish ? 
+              <div className=''>Niño</div> :
+              <div className='text-center'>Stud Muffin</div>
+            }
 
-            <div>
-              OR
-            </div>
+            {spanish ?
+              <div>O</div> :
+              <div>OR</div>
+            }
 
-            <div>
-              Cupcake?
-            </div>
+            {spanish ?
+              <div>Niña?</div> :
+              <div>Cupcake?</div>
+            }
           </div>
 
           <img src={bluecupcake} className='w-[120px]' />
         </div>
         
-        <div className='text-xl pt-2'>
-          Come find out & see @ the
-        </div>
+        {spanish ?
+          <div className='text-xl pt-2'>Ven y descubrelo en la</div> :
+          <div className='text-xl pt-2'>Come find out & see @ the</div>
+        }
 
-        <div className='text-xl'>
-          Gender Reveal Baby Shower for
-        </div>
+        {spanish ? 
+          <div className='text-xl'>Revelación de Sexo Baby Shower de</div> :
+          <div className='text-xl'>Gender Reveal Baby Shower for</div>
+        }
 
-        <div className='font-bold text-5xl text-gold pb-4'>
-          Alex & Gloria
-        </div>
+        {spanish ?
+          <div className='font-bold text-5xl text-gold pb-4'>Gloria y Alex</div> :
+          <div className='font-bold text-5xl text-gold pb-4'>Alex & Gloria</div>
+        }
 
-        <div className='text-xl pt-12'>
-          Tap for more information
-        </div>
+        {spanish ?
+          <div className='text-xl pt-12'>Tap</div> :
+          <div className='text-xl pt-12'>Tap for more information</div>
+        }
       </a.div>
 
       <a.div className='absolute cursor-pointer will-change-transform w-full flex flex-col items-center gap-5 pt-6' style={{opacity, transform, rotateX: '180deg'}}>
-        <div className='text-2xl'>
-          Registry is at <a>Amazon</a>
-        </div>
+        {spanish ?
+          <div className='text-2xl'>Lista de regalos está en <a>Amazon</a></div> :
+          <div className='text-2xl'>Registry is at <a>Amazon</a></div>
+        }
 
-        <div className='font-bold text-3xl text-gold'>
-          Location:
-        </div>
+        {spanish ?
+          <div className='font-bold text-3xl text-gold'>Lugar:</div> :
+          <div className='font-bold text-3xl text-gold'>Location:</div>
+        }
 
-        <div className='text-xl'>
-          Friday - 4th of August @ 6:00 PM
-        </div>
+        {spanish ?
+          <div className='text-xl'>Viernes - 4th de Agosto @ 6:00 PM</div> :
+          <div className='text-xl'>Friday - 4th of August @ 6:00 PM</div>
+        }
 
-        <div className='text-xl'>
-          B & B Event Hall
-        </div>
+        <div className='text-xl'>B & B Event Hall</div>
 
-        <div className='text-xl'>
-          1480 Beaver Ruin Rd. Norcross, GA, 30093
-        </div>
+        <div className='text-xl'>1480 Beaver Ruin Rd. Norcross, GA, 30093</div>
         
-        <div className='font-bold text-3xl text-gold'>
-          Diaper Raffle!
-        </div>
+        {spanish ?
+          <div className='font-bold text-3xl text-gold'>Rifa!</div> :
+          <div className='font-bold text-3xl text-gold'>Diaper Raffle!</div>
+        }
 
-        <div className='text-2xl'>
-          For each pack of diapers you bring, you'll
-        </div>
+        {spanish ?
+          <div className='text-2xl'>Por cada paquete de daipers que traigas,</div> :
+          <div className='text-2xl'>For each pack of diapers you bring, you'll</div>
+        }
 
-        <div className='text-2xl'>
-          receive one entry in our prize drawing.
-        </div>
+        {spanish ?
+          <div className='text-2xl'>reciviras un ticket para las rifas.</div> :
+          <div className='text-2xl'>receive one entry in our prize drawing.</div>
+        }
         
-        <div className='text-2xl'>
-          First prize is getting the baby named after you!!!
-        </div>
+        {spanish ?
+          <div className='text-2xl'>Primer premio Nombraremos al bebé como</div> :
+          <div className='text-2xl'>First prize is getting the baby named after you!!!</div>
+        }
 
-        <div className='text-2xl'>
-          Just kidding - it's a basket with goodies! 
-        </div>
+        {spanish ?
+          <div className='text-2xl'>el ganador o ganadora!!!</div> :
+          <div className='hidden'></div>
+        }
+
+        {spanish ?
+          <div className='text-2xl'>Solo es broma - son canastas con sorpresas!</div> :
+          <div className='text-2xl'>Just kidding - it's a basket with goodies!</div>
+        }
       </a.div>
     </div>
     }
