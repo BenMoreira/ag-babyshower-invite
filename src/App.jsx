@@ -95,8 +95,12 @@ function App() {
 
       <a.div className='absolute cursor-pointer will-change-transform w-full flex flex-col items-center gap-5 pt-6' style={{opacity, transform, rotateX: '180deg'}}>
         {spanish ?
-          <div className='text-2xl'>Lista de regalos está en <a>Amazon</a></div> :
-          <div className='text-2xl'>Registry is at <a>Amazon</a></div>
+          <div className='text-2xl'>Lista de regalos está en <a 
+            href='https://www.amazon.com/baby-reg/11YXKJS2LQ3YS?ref=br_search_v2_desktop_res_2' className='font-bold underline'>Amazon</a>
+          </div> :
+          <div className='text-2xl'>Registry is at <a 
+            href='https://www.amazon.com/baby-reg/11YXKJS2LQ3YS?ref=br_search_v2_desktop_res_2' className='font-bold underline'>Amazon</a>
+          </div>
         }
 
         {spanish ?
@@ -111,7 +115,12 @@ function App() {
 
         <div className='text-xl'>B & B Event Hall</div>
 
-        <div className='text-xl'>1480 Beaver Ruin Rd. Norcross, GA, 30093</div>
+        <a 
+          className='text-xl font-bold underline'
+          href='https://www.google.com/maps/place/B%26B+Event+Hall/@33.9313507,-84.153876,15z/data=!4m16!1m9!3m8!1s0x88f5a382236f2833:0x2fc38dcba407df15!2s1480+Beaver+Ruin+Rd,+Norcross,+GA+30093!3b1!8m2!3d33.9313507!4d-84.1451213!10e5!16s%2Fg%2F11b8v5493z!3m5!1s0x88f5a38224c243b3:0x899e2f5a96e94df4!8m2!3d33.9313507!4d-84.1451213!16s%2Fg%2F11t2874bwx?entry=ttu'
+        >
+          1480 Beaver Ruin Rd. Norcross, GA, 30093
+        </a>
         
         {spanish ?
           <div className='font-bold text-3xl text-gold'>Rifa!</div> :
