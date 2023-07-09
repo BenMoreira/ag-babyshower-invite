@@ -25,12 +25,12 @@ function App() {
     <div className='w-full min-h-screen bg-black'>
       <div className='w-full h-screen flex flex-col justify-center items-center font-bold gap-8'>
         <button onClick={() => setPopup(false)} 
-        className='bg-gradient-to-tl from-pink-300 via-white to-blue-500 rounded-lg px-6 py-2'>
+        className='bg-gradient-to-tl from-pink-300 via-white to-blue-500 rounded-lg px-14 py-4 text-xl'>
           English
         </button>
 
         <button onClick={() => {setPopup(false); setSpanish(true)}} 
-        className='bg-gradient-to-tl from-pink-300 via-white to-blue-500 rounded-lg px-5 py-2'>
+        className='bg-gradient-to-tl from-pink-300 via-white to-blue-500 rounded-lg px-12 py-4 text-xl'>
           Espanyol
         </button>
       </div>
@@ -119,28 +119,28 @@ function App() {
         }
 
         {spanish ?
-          <div className='text-2xl'>Por cada paquete de daipers que traigas,</div> :
-          <div className='text-2xl'>For each pack of diapers you bring, you'll</div>
+          <div className='text-xl'>Por cada paquete de daipers que traigas,</div> :
+          <div className='text-xl'>For each pack of diapers you bring, you'll</div>
         }
 
         {spanish ?
-          <div className='text-2xl'>reciviras un ticket para las rifas.</div> :
-          <div className='text-2xl'>receive one entry in our prize drawing.</div>
+          <div className='text-xl'>reciviras un ticket para las rifas.</div> :
+          <div className='text-xl'>receive one entry in our prize drawing.</div>
         }
         
         {spanish ?
-          <div className='text-2xl'>Primer premio Nombraremos al bebé como</div> :
-          <div className='text-2xl'>First prize is getting the baby named after you!!!</div>
+          <div className='text-xl'>Primer premio Nombraremos al bebé como</div> :
+          <div className='text-xl'>First prize is getting the baby named after you!!!</div>
         }
 
         {spanish ?
-          <div className='text-2xl'>el ganador o ganadora!!!</div> :
+          <div className='text-xl'>el ganador o ganadora!!!</div> :
           <div className='hidden'></div>
         }
 
         {spanish ?
-          <div className='text-2xl'>Solo es broma - son canastas con sorpresas!</div> :
-          <div className='text-2xl'>Just kidding - it's a basket with goodies!</div>
+          <div className='text-xl'>Solo es broma - son canastas con sorpresas!</div> :
+          <div className='text-xl'>Just kidding - it's a basket with goodies!</div>
         }
       </a.div>
     </div>
