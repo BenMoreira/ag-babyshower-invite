@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import cupcakes from './assets/cupcakes.png'
 import pinkcupcake from './assets/pinkcupcake.png'
 import bluecupcake from './assets/bluecupcake.png'
+import ribbon from './assets/ribbon.png'
 import './App.css'
 
 function App() {
@@ -68,10 +69,12 @@ function App() {
 
           <img src={bluecupcake} className='w-[120px]' />
         </div>
+
+        <img src={ribbon} />
         
         {spanish ?
-          <div className='text-xl pt-2'>Ven y descubrelo en la</div> :
-          <div className='text-xl pt-2'>Come find out & see @ the</div>
+          <div className='text-xl pt-8'>Ven y descubrelo en la</div> :
+          <div className='text-xl pt-8'>Come find out & see @ the</div>
         }
 
         {spanish ? 
@@ -85,8 +88,8 @@ function App() {
         }
 
         {spanish ?
-          <div className='text-xl pt-12'>Tap</div> :
-          <div className='text-xl pt-12'>Tap for more information</div>
+          <div className='text-xl pt-6'>Tap</div> :
+          <div className='text-xl pt-6'>Tap for more information</div>
         }
       </a.div>
 
