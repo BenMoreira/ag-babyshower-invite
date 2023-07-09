@@ -25,7 +25,7 @@ function App() {
     <div className='w-full min-h-screen bg-black'>
       <div className='w-full h-screen flex flex-col justify-center items-center font-bold gap-8'>
         <button onClick={() => setPopup(false)} 
-        className='bg-gradient-to-tl from-pink-300 via-white to-blue-500 rounded-lg px-14 py-4 text-xl'>
+        className='bg-gradient-to-tl from-pink-300 via-white to-blue-500 rounded-lg px-[3.25rem] py-4 text-xl'>
           English
         </button>
 
