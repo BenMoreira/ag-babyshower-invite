@@ -88,12 +88,17 @@ function App() {
         }
 
         {spanish ?
-          <div className='text-xl pt-6'>Tap</div> :
+          <div className='text-xl pt-6'>Toca para más información</div> :
           <div className='text-xl pt-6'>Tap for more information</div>
         }
       </a.div>
 
       <a.div className='absolute cursor-pointer will-change-transform w-full flex flex-col items-center gap-5 pt-6' style={{opacity, transform, rotateX: '180deg'}}>
+        <div className='flex flex-row justify-center items-center'>
+          <img src={pinkcupcake} className='w-[120px]' />
+          <img src={bluecupcake} className='w-[120px]' />
+        </div>
+        
         {spanish ?
           <div className='text-2xl'>Lista de regalos está en <a 
             href='https://www.amazon.com/baby-reg/11YXKJS2LQ3YS?ref=br_search_v2_desktop_res_2' className='font-bold underline'>Amazon</a>
@@ -138,17 +143,17 @@ function App() {
         }
         
         {spanish ?
-          <div className='text-xl'>Primer premio Nombraremos al bebé como</div> :
+          <div className='text-xl'>El ganador/ganadora del primer premio le pone</div> :
           <div className='text-xl'>First prize is getting the baby named after you!!!</div>
         }
 
         {spanish ?
-          <div className='text-xl'>el ganador o ganadora!!!</div> :
+          <div className='text-xl'>su nombre al bebé!</div> :
           <div className='hidden'></div>
         }
 
         {spanish ?
-          <div className='text-xl'>Solo es broma - son canastas con sorpresas!</div> :
+          <div className='text-xl'>Es una broma - son canastas con sorpresas!</div> :
           <div className='text-xl'>Just kidding - it's a basket with goodies!</div>
         }
       </a.div>
