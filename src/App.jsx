@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useSpring, a } from '@react-spring/web';
 import { motion } from 'framer-motion';
-import cupcakes from './assets/cupcakes.png'
 import pinkcupcake from './assets/pinkcupcake.png'
 import bluecupcake from './assets/bluecupcake.png'
 import ribbon from './assets/ribbon.png'
