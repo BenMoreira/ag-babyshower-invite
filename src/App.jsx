@@ -31,7 +31,7 @@ function App() {
 
         <button onClick={() => {setPopup(false); setSpanish(true)}} 
         className='bg-gradient-to-tl from-pink-300 via-white to-blue-500 rounded-lg px-12 py-4 text-xl'>
-          Espanyol
+          Español
         </button>
       </div>
     </div> :
