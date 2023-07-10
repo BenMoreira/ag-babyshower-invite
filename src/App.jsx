@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import pinkcupcake from './assets/pinkcupcake.png'
 import bluecupcake from './assets/bluecupcake.png'
 import ribbon from './assets/ribbon.png'
+import ConfettiExplosion from 'react-confetti-explosion';
 import './App.css'
 
 function App() {
@@ -35,7 +36,22 @@ function App() {
       </div>
     </div> :
     <div className='w-full min-h-screen bg-gradient-to-tl from-pink-300 via-white to-blue-500 text-gold' onClick={() => setFlipped(!flipped)}>
-      <a.div className='absolute cursor-pointer will-change-transform w-full flex flex-col items-center gap-5 pt-6' style={{ opacity: opacity.to(o => 1 - o), transform }}>
+      <div className='w-full flex flex-col items-center'>
+        <ConfettiExplosion force={0.8} duration={3000} particleCount={250} colors={['#f9a8d4', '#3b82f6', '#d4af37']} />
+      </div>
+      
+      <motion.div
+        initial={{
+          opacity: 0
+        }}
+        animate={{
+          opacity: 1,
+          transition: {
+            duration: 5
+          }
+        }}
+      >
+      <a.div className='absolute cursor-pointer will-change-transform w-full flex flex-col items-center gap-5 pt-6' style={{ opacity: opacity.to(o => 1 - o), transform }}>  
         {spanish ? 
           <div className='font-bold text-3xl'>Hay un bebé en Camino...</div> :
           <div className='font-bold text-3xl'>A Bun Is In The Oven...</div>
@@ -91,6 +107,7 @@ function App() {
           <div className='text-xl pt-6'>Tap for more information</div>
         }
       </a.div>
+      </motion.div>
 
       <a.div className='absolute cursor-pointer will-change-transform w-full flex flex-col items-center gap-5 pt-6' style={{opacity, transform, rotateX: '180deg'}}>
         <div className='flex flex-row justify-center items-center'>
